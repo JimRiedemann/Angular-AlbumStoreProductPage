@@ -1,5 +1,5 @@
 <ul>
   <li *ngFor="let product of products; index as i; trackBy: trackByFn">
-    {{product.albumName}}
+    <a routerLink='/product/{{product.id}}' routerLinkActive='active'>{{product.albumName}}</a>
   </li>
 </ul>
